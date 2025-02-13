@@ -1,0 +1,964 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: visible;
+}
+/* font-family: "Sour Gummy", sans-serif; */
+
+.fun {
+  display: none;
+}
+.container {
+  /* width: 100%; */
+  font-family: sans-serif;
+  overflow: visible;
+}
+.bg {
+  width: 100%;
+  /* height: 500px; */
+  background-image: url(cube.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* padding-top: 3%; */
+  overflow: hidden;
+}
+.header-div {
+  width: 100%;
+  /* height: 500px; */
+  background-color: rgba(255, 255, 255, 0.6);
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 8%;
+  /* padding-top: 3%; */
+}
+.nav {
+  /* position: fixed; */
+  width: 100%;
+  padding: 1% 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  align-items: center;
+  color: rgba(6, 5, 5, 0.8);
+}
+.nav-heading {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 60px;
+  margin-right: 20px;
+}
+.nav-list {
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.nav-list li:hover {
+  cursor: pointer;
+}
+.nav-btn {
+  display: inline-block;
+  /* width: 202px; */
+  background-color: #ffffff;
+  border: 1px solid black;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 36px;
+  box-shadow: 2px 2px 0px 2px black;
+}
+.nav-btn:hover {
+  box-shadow: 0 0 0 0 white;
+  transition: 0.5s;
+}
+/* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+.nav-btn a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(6, 5, 5, 1);
+}
+.nav-btn:hover {
+  box-shadow: 0 0 0 0 white;
+  transition: 0.5s;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10%;
+  justify-content: space-between;
+  margin-top: 6%;
+}
+h1 {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 120px;
+  /* border: 1px solid black; */
+  letter-spacing: -6px;
+}
+.header-text-box {
+  line-height: 2;
+  font-size: 25px;
+}
+.shop-btn {
+  background-color: #f59f00;
+  border: 1px solid black;
+  box-shadow: 2px 2px 0px 2px black;
+  padding: 1% 5%;
+  display: inline-block;
+  margin-top: 10%;
+}
+.shop-btn a {
+  color: black;
+  text-decoration: none;
+}
+.shop-btn:hover {
+  box-shadow: 0 0 0 0 white;
+  transition: 0.5s;
+}
+
+/* Three card Section */
+.grid-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5%;
+  padding: 2% 5%;
+  overflow: hidden;
+}
+.card {
+  border: 1px solid black;
+  box-shadow: 2px 2px 0px 2px black;
+  padding: 5%;
+}
+.card h3 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 24px;
+}
+.card p {
+  text-align: center;
+  line-height: 2;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.card h2 {
+  text-align: center;
+  margin: 30px 0 50px;
+}
+.icon {
+  stroke: #f59f00;
+  width: 150px;
+  height: 150px;
+}
+.card:hover {
+  box-shadow: 0 0 0 0 white;
+  transition: 0.5s;
+  transform: translate(0, -10px);
+}
+
+/* New Addition Section */
+.new-add {
+  background-color: #dee2e6;
+  padding: 50px 125px;
+  overflow: hidden;
+}
+.new-add h2 {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.new-add-gal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 25px;
+}
+.gal-card {
+  padding: 10px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 0px 2px black;
+  background-color: #fff;
+}
+.gal-card:hover {
+  box-shadow: 0 0 0 0 white;
+  transition: 0.5s;
+  transform: translate(0, -10px);
+}
+.gal-card img {
+  width: 100%;
+  height: 250px;
+}
+.gal-card-text {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 30px;
+}
+.gal-card-text {
+  font-size: 20px;
+}
+.rd-mr {
+  margin: 30px 0;
+}
+.rd-mr a {
+  color: #f59f00;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Awards Section */
+.awards-section {
+  padding: 80px 30px;
+  overflow: hidden;
+}
+.awards-section h2 {
+  text-align: center;
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 80px;
+  margin-bottom: 80px;
+}
+.award-name {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 0;
+  border-bottom: 2px solid black;
+}
+.top {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.award-name img {
+  width: 100px;
+  height: 100px;
+}
+.awards-desc-1 {
+  display: flex;
+  gap: 15%;
+}
+.awards-desc-1-name {
+  align-self: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+.award-month {
+  text-transform: uppercase;
+  color: #f59f00;
+}
+.awards-desc-2 {
+  display: flex;
+  gap: 15%;
+}
+.awards-desc-text {
+  font-size: 20px;
+  align-self: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+.arrow {
+  color: #f59f00;
+  font-size: 80px;
+  font-weight: bold;
+}
+.award-name:hover .arrow {
+  transform: rotate(45deg);
+  transition: 0.4s;
+}
+
+/* Latest Product section */
+.latest-product-section {
+  background-color: #f59f00;
+  padding: 80px;
+  overflow: hidden;
+}
+.latest-product-section h2 {
+  text-align: center;
+  font-size: 80px;
+  font-family: "Sour Gummy", sans-serif;
+  margin-bottom: 80px;
+}
+.latest-product-section img {
+  width: 100%;
+}
+.latest-products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+}
+.latest-products h3 {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+.project a {
+  color: black;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* Features Section */
+.features-section {
+  padding: 75px 50px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: 100px;
+  overflow: hidden;
+}
+.features-section img {
+  width: 100%;
+  height: 700px;
+}
+.detail-feature h2 {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 90px;
+  line-height: 1;
+  margin-bottom: 60px;
+}
+.feature h3 {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 55px;
+  margin-bottom: 25px;
+}
+.feature-text {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.ft-lst {
+  margin-bottom: 0;
+}
+.feature-img {
+  align-self: center;
+}
+
+/* Client Goals Section */
+.goals-section {
+  background-color: #f59f00;
+  padding: 70px 40px;
+  padding-bottom: 300px;
+  position: relative;
+  overflow: visible;
+}
+.goals-div {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  column-gap: 100px;
+}
+.goals-section img {
+  width: 100%;
+  align-self: center;
+  height: 600px;
+}
+.goals-text-box h2 {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 80px;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+.gl-txt {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.goals-btn {
+  display: inline-block;
+  /* width: 202px; */
+  background-color: #ffffff;
+  border: 1px solid black;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 36px;
+  box-shadow: 2px 2px 0px 2px black;
+}
+.goals-btn a {
+  color: black;
+  text-decoration: none;
+}
+.goals-btn:hover {
+  box-shadow: 0 0 0 0 white;
+  transition: 0.5s;
+}
+
+.meeting {
+  width: 98%;
+  right: 1%;
+  top: 85%;
+  position: absolute;
+}
+.meeting img {
+  width: 100%;
+  z-index: -1;
+}
+.play {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  bottom: 50%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+.play-icon {
+  height: 40px;
+  width: 40px;
+}
+.play:hover {
+  /* width: 150px;
+  height: 150px; */
+  transform: scale(1.25, 1.25);
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  bottom: 50%;
+  transform-origin: center;
+  background-color: #f59f00;
+  transition: 0.6s;
+}
+.play:hover .play-icon {
+  stroke: white;
+}
+
+/* Brands Section */
+.brands-section {
+  margin-top: 550px;
+  padding: 0 50px 80px;
+  overflow: hidden;
+}
+.brands-text {
+  font-size: 25px;
+  font-weight: bold;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.brands-logo {
+  padding: 60px 0;
+  border-bottom: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.brands-logo img {
+  margin-bottom: 30px;
+  opacity: 0.5;
+}
+.brands-logo img:last-child {
+  margin-bottom: 0;
+}
+.brands-logo img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Review Section */
+.review-section {
+  background-color: #f59f00;
+  padding: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  overflow: hidden;
+}
+.review-icon {
+  /* display: inline-block; */
+  width: 120px;
+  height: 120px;
+  border: 1px solid black;
+  box-shadow: 5px 2px 0px 2px black;
+  border-radius: 50%;
+  padding: 10px;
+  overflow: hidden;
+}
+.review-icn {
+  height: 100px;
+  width: 100px;
+}
+.review-text {
+  font-family: "Sour Gummy", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+}
+.reviewer {
+  text-align: center;
+  font-size: 25px;
+}
+
+/* Price Plans Section */
+.plans-section {
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  overflow: hidden;
+}
+.plans-section h2 {
+  font-family: "Sour Gummy", sans-serif;
+  text-align: center;
+  font-size: 80px;
+}
+.price-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+}
+.plans-card {
+  padding: 40px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 0px 2px black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.plans-card:hover {
+  box-shadow: 0 0 0 0 white;
+  transition: 0.5s;
+  transform: translate(0, -10px);
+}
+.plans-card h2 {
+  font-family: sans-serif;
+  text-align: left;
+  font-size: 30px;
+}
+.price {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 80px;
+  color: #f59f00;
+  font-weight: bold;
+}
+.price font {
+  font-size: 25px;
+  font-family: sans-serif;
+}
+.plan-text {
+  font-size: 20px;
+}
+.plan-feature {
+  margin: 30px 0;
+}
+.plan-feature ul {
+  list-style: none;
+}
+.plan-feature ul li {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.plan-feature ul li:last-child {
+  margin-bottom: 0;
+}
+.check-icon {
+  stroke: #f59f00;
+  width: 20px;
+  height: 20px;
+}
+.price-btn {
+  padding: 30px;
+  background-color: #f59f00;
+  border: 1px solid black;
+  box-shadow: 2px 2px 0px 2px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.price-btn a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+.price-btn:hover {
+  box-shadow: 0 0 0 0 white;
+  transition: 0.5s;
+}
+
+/* News Section */
+.news-section {
+  padding: 80px 80px;
+  overflow: hidden;
+}
+.news-section h2 {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.news-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+}
+.news-1 {
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 0px 2px black;
+}
+.news-1:hover {
+  box-shadow: 0 0 0 0 white;
+  transform: translate(0, -10px);
+  transition: 0.5s;
+}
+.news-1 img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.news-text {
+  padding: 0 30px;
+}
+.date {
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.news-text h2 {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 50px;
+  text-align: left;
+  margin-top: 10px;
+}
+.news-btn {
+  display: inline-block;
+}
+.news-btn a {
+  text-transform: uppercase;
+  color: #f59f00;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 40px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  column-gap: 100px;
+  overflow: hidden;
+}
+.faq-heading {
+  align-self: center;
+}
+.faq-heading h2 {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 100px;
+  line-height: 1;
+}
+.faq-btn {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f59f00;
+  padding: 10px 20px;
+  margin-top: 50px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 0px 2px black;
+}
+.faq-btn a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+.faq-btn:hover {
+  box-shadow: 0 0 0 0 white;
+  transition: 0.5s;
+}
+.question {
+  padding: 30px 0;
+  padding-right: 10px;
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 25px;
+}
+.ques-more {
+  color: #f59f00;
+  margin-left: 20px;
+}
+
+/* Message Section */
+iframe {
+  width: 100%;
+}
+.message-section {
+  padding: 80px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  overflow: hidden;
+}
+.form-div h2 {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.field-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+}
+.form-name-email {
+  padding: 50px 0;
+  border-bottom: 2px solid black;
+}
+.form input {
+  border: none;
+  font-size: 25px;
+}
+.form-name-email:hover {
+  border-bottom: 2px solid #f59f00;
+}
+input:focus {
+  outline: none;
+}
+.msg-div {
+  padding: 50px 0 0;
+  border-bottom: 2px solid black;
+}
+.msg-div:hover {
+  border-bottom: 2px solid #f59f00;
+}
+.msg-div textarea {
+  width: 100%;
+  height: 100px;
+  border: none;
+  font-size: 25px;
+}
+.msg-div textarea:focus {
+  outline: none;
+}
+.msg-btn {
+  padding: 20px;
+  background-color: #f59f00;
+  border: 1px solid black;
+  box-shadow: 2px 2px 0px 2px black;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 100px;
+}
+.msg-btn input {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 25px;
+  background-color: #f59f00;
+}
+.msg-btn:hover {
+  box-shadow: 0 0 0 0 white;
+  transition: 0.5s;
+}
+/* Footer */
+footer {
+  background-color: #c3fae8;
+  padding: 40px;
+  overflow: hidden;
+}
+footer p {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+  .container {
+    width: 767px;
+    zoom: 100%;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .grid-col {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .new-add {
+    padding: 20px;
+  }
+  .new-add-gal {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .award-name {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px 0;
+  }
+  .awards-section h2 {
+    font-size: 50px;
+  }
+  .awards-desc-text {
+    margin-top: 20px;
+  }
+  .arrow {
+    display: none;
+  }
+  .latest-products {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 80px;
+  }
+  .latest-product-section h2 {
+    font-size: 50px;
+  }
+  .latest-products h3 {
+    font-size: 35px;
+  }
+  .detail-feature h2 {
+    font-size: 50px;
+  }
+  .feature h3 {
+    font-size: 35px;
+  }
+  .goals-div {
+    grid-template-columns: 1fr;
+    row-gap: 100px;
+  }
+  .goals-text-box h2 {
+    font-size: 50px;
+  }
+  .brands-logo {
+    flex-direction: column;
+  }
+  .review-icon {
+    width: 100px;
+    height: 100px;
+  }
+  .review-icn {
+    height: 80px;
+    width: 80px;
+  }
+  .review-text {
+    font-size: 30px;
+  }
+  .reviewer {
+    font-size: 20px;
+  }
+  .price-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+  .plan-feature ul li {
+    font-size: 15px;
+  }
+  .news-text h2 {
+    font-size: 30px;
+  }
+  .faq-section {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+  .message-section {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .container {
+    width: 950px;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+  }
+  h1 {
+    font-size: 60px;
+    letter-spacing: -3px;
+  }
+  .header-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .features-section {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 100px;
+  }
+  .news-div {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+  .faq-heading h2 {
+    font-size: 80px;
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 660px) {
+  h1 {
+    font-size: 40px;
+    letter-spacing: -2px;
+  }
+}
+.new-add h2 {
+  font-size: 60px;
+}
+@media screen and (max-width: 400px) {
+  .new-add h2 {
+    font-size: 30px;
+  }
+  .icon {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .new-add-gal {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 20px;
+  }
+  .last-card {
+    grid-column: 1/-1;
+  }
+}
+@media screen and (max-width: 220px) {
+  .container {
+    display: none;
+  }
+  .fun {
+    display: block;
+  }
+}
